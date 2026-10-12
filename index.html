@@ -1,22 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>welcome to my webpage</h1>
-    <p>this is my first webpage</p>
-    <h2>habimana gatera patrick</h2>
-    <p>25/BSE/BU/R/0025</p>
-    
-    <p>i am learning software engineering because it teaches me how to build
-        software correctly efficiently and professionaly, not just how to write
-        code.
-        software engineering teaches me how to analyze a problem and
-        develop a suitable software solution.</p>
 
-        <img src="IMG-20260714-WA0144.jpg"    
+    <title>My First Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f5f9;
+            color: #222;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #212529;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #0d6efd;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>This is my first webpage</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="semantic%20element.html">Semantic Elements</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Habimana Gatera Patrick</h2>
+            <p>Student ID: 25/BSE/BU/R/0025</p>
+        </section>
+
+        <section>
+            <h2>Why I Am Learning Software Engineering</h2>
+
+            <p>
+                I am learning software engineering because it teaches me
+                how to build software correctly, efficiently, and
+                professionally, not just how to write code.
+            </p>
+
+            <p>
+                Software engineering teaches me how to analyze a problem
+                and develop a suitable software solution.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Photo</h2>
+
+            <img
+                src="IMG-20260714-WA0144.jpg"
+                alt="Photo of Habimana Gatera Patrick">
+        </section>
+
+        <p>
+            Visit the
+            <a href="semantic%20element.html">Semantic Elements page</a>
+            to learn more about HTML semantic elements.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My First Webpage</p>
+    </footer>
+
 </body>
 </html>
