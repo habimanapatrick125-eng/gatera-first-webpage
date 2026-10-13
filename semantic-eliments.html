@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Semantic Elements</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            color: #222;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        nav {
+            background-color: #212529;
+            padding: 15px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-menu li {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        .nav-menu li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .nav-menu li a:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+        }
+
+        section {
+            background-color: #d1e7dd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-left: 5px solid #ffc107;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #9ec5fe;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            header, main {
+                padding: 18px;
+            }
+
+            .nav-menu li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>HTML Semantic Elements</h1>
+            <p>Learn how to structure a webpage correctly.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./semantic%20elements.html">Semantic Elements</a></li>
+                <li><a href="./index.html#about">About</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Section</h2>
+                <p>
+                    The section element groups related content under
+                    a common topic or heading.
+                </p>
+            </section>
+
+            <section>
+                <h2>Main Content</h2>
+                <p>
+                    The main element contains the central content
+                    of a webpage.
+                </p>
+            </section>
+
+            <aside>
+                <h2>Aside</h2>
+                <p>
+                    The aside element contains additional information
+                    related to the main content.
+                </p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Footer Area - My HTML Learning Project</p>
+            <p><a href="./index.html">Return to Home Page</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
