@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My First Webpage</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f2f5f9;
             color: #222;
         }
@@ -30,10 +32,12 @@
         }
 
         nav a {
+            display: inline-block;
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
         }
 
         nav a:hover {
@@ -63,6 +67,13 @@
             text-align: center;
             padding: 15px;
         }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 15px;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -73,9 +84,9 @@
         <p>This is my first webpage</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="semantic%20elements.html">Semantic Elements</a>
+    <nav aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./semantic%20elements.html">Semantic Elements</a>
     </nav>
 
     <main>
@@ -84,7 +95,7 @@
             <p>Student ID: 25/BSE/BU/R/0025</p>
         </section>
 
-        <section>
+        <section id="about">
             <h2>Why I Am Learning Software Engineering</h2>
 
             <p>
@@ -103,13 +114,15 @@
             <h2>My Photo</h2>
 
             <img
-                src="IMG-20260714-WA0144.jpg"
+                src="./IMG-20260714-WA0144.jpg"
                 alt="Photo of Habimana Gatera Patrick">
         </section>
 
         <p>
             Visit the
-            <a href="semantic%20element.html">Semantic Elements page</a>
+            <a href="./semantic%20elements.html">
+                Semantic Elements page
+            </a>
             to learn more about HTML semantic elements.
         </p>
     </main>
