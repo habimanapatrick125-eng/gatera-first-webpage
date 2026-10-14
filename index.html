@@ -1,135 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-
+    <title>My First Webpage - Habimana Gatera Patrick</title>
+    <!-- Lien vers Bootstrap pour un style propre (optionnel mais recommandé vu vos classes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
+            padding: 20px;
             font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f2f5f9;
-            color: #222;
         }
-
-        header {
-            background-color: #0d6efd;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        nav {
-            background-color: #212529;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            margin: 5px 10px;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background-color: #0d6efd;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 25px auto;
-            padding: 25px;
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-            width: 300px;
+        .profile-img {
+            max-width: 250px;
             height: auto;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #212529;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        @media (max-width: 600px) {
-            main {
-                margin: 15px;
-                padding: 15px;
-            }
+            border-radius: 8px;
+            margin-top: 15px;
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Welcome to My Webpage</h1>
-        <p>This is my first webpage</p>
+    <header class="mb-4">
+        <nav class="nav">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="semantic.html">Semantic Elements</a>
+        </nav>
     </header>
 
-    <nav aria-label="Main navigation">
-        <a href="./index.html">Home</a>
-        <a href="./semantic%20elements.html">Semantic Elements</a>
-    </nav>
+    <main class="container">
+        <h1 class="text-primary">Welcome to my webpage</h1>
+        <p class="lead">This is my first webpage</p>
+        
+        <hr>
 
-    <main>
-        <section>
-            <h2>Habimana Gatera Patrick</h2>
-            <p>Student ID: 25/BSE/BU/R/0025</p>
-        </section>
+        <h3>Student Information</h3>
+        <p><strong>Name:</strong> Habimana Gatera Patrick</p>
+        <p><strong>Registration Number:</strong> 25/BSE/BU/R/0025</p>
 
-        <section id="about">
-            <h2>Why I Am Learning Software Engineering</h2>
-
-            <p>
-                I am learning software engineering because it teaches me
-                how to build software correctly, efficiently, and
-                professionally, not just how to write code.
-            </p>
-
-            <p>
-                Software engineering teaches me how to analyze a problem
-                and develop a suitable software solution.
-            </p>
-        </section>
-
-        <section>
-            <h2>My Photo</h2>
-
-            <img
-                src="./IMG-20260714-WA0144.jpg"
-                alt="Photo of Habimana Gatera Patrick">
-        </section>
+        <hr>
 
         <p>
-            Visit the
-            <a href="./semantic%20elements.html">
-                Semantic Elements page
-            </a>
-            to learn more about HTML semantic elements.
+            I am learning software engineering because it teaches me how to build software correctly, efficiently, and professionally, not just how to write code. Software engineering teaches me how to analyze a problem and develop a suitable software solution.
         </p>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 My First Webpage</p>
-    </footer>
+        <!-- Image avec gestion d'erreur si le fichier n'est pas trouvé -->
+        <div>
+            <img src="IMG-20260714-WA0144.jpg" alt="Habimana Gatera Patrick" class="profile-img">
+        </div>
+    </main>
 
 </body>
 </html>
